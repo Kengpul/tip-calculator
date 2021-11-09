@@ -1,0 +1,59 @@
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+}
+
+.calculator-container {
+  background-color: white;
+  width: 600px;
+  height: 290px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.container {
+  height: 450px;
+}
+.calculator-inputs {
+  height: 200px;
+  position: relative;
+}
+.calculator-inputs input[type="text"] {
+  background-color: hsl(189, 41%, 97%);
+  padding: 0 10px;
+  text-align: right;
+  color: hsl(183, 100%, 15%);
+}
+.mb-3 {
+  position: relative;
+}
+.calculator-inputs span {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  color: hsl(184, 14%, 56%);
+  font-size: 14px;
+}
+.calculator-inputs label {
+  font-size: 12px;
+  color: hsl(183, 100%, 15%);
+}
+
+.tip-buttons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+}
+.tip-buttons button {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  width: 90%;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.tip-buttons button:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+.tip-buttons .custom {
+  color: hsl(184, 14%, 56%);
+  background-color: hsl(189, 41%, 97%);
+}
