@@ -30,13 +30,13 @@
 
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
-  <body>
+  <body class="d-flex align-items-center">
     <div class="container d-flex justify-content-center align-items-center">
       <div class="row">
         <div class="col calculator-container">
           <div class="row">
             <div class="col-6 calculator-inputs">
-              <div class="mb-3">
+              <div class="mb-4">
                 <label for="bill-input">Bill</label>
                 <span><i class="fas fa-dollar-sign"></i></span>
                 <input
@@ -47,7 +47,7 @@
                 />
               </div>
 
-              <div class="mb-3">
+              <div class="mb-4">
                 <label>Select Tip %</label>
                 <div class="tip-buttons">
                   <button class="btn">5%</button>
@@ -59,7 +59,7 @@
                 </div>
               </div>
 
-              <div class="mb-3">
+              <div class="mb-4">
                 <label for="number-of-people">Number of People</label>
                 <span><i class="fas fa-user"></i></span>
                 <input
@@ -71,7 +71,30 @@
               </div>
             </div>
 
-            <div class="col-6 calculator-results">right</div>
+            <div class="col-6 calculator-results">
+              <div class="row mb-3">
+                <div class="col">
+                  <div class="tip-amount">
+                    <h6>Tip Ammount</h6>
+                    <p>/ person</p>
+                  </div>
+                  <div class="tip-amount-total pb-2">$0.00</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="tip-amount">
+                    <h6>Total</h6>
+                    <p>/ person</p>
+                  </div>
+                  <div class="tip-amount-total pb-2">$0.00</div>
+                </div>
+              </div>
+              <div class="row reset-btn">
+                <button class="btn">RESET</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

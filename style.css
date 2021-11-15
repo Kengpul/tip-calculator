@@ -1,41 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: hsl(185, 41%, 84%);
   font-family: "Space Mono", monospace;
+  height: 100vh;
 }
 
 .calculator-container {
   background-color: white;
-  width: 600px;
-  height: 290px;
+  width: 50rem;
+  height: 25rem;
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
 }
-.container {
-  height: 450px;
-}
+
 .calculator-inputs {
-  height: 200px;
+  height: 100%;
   position: relative;
 }
 .calculator-inputs input[type="text"] {
   background-color: hsl(189, 41%, 97%);
-  padding: 0 10px;
+  padding: 0.5rem 10px;
   text-align: right;
   color: hsl(183, 100%, 15%);
 }
-.mb-3 {
+.mb-4 {
   position: relative;
 }
 .calculator-inputs span {
   position: absolute;
   top: 55%;
-  left: 5%;
+  left: 3%;
   color: hsl(184, 14%, 56%);
-  font-size: 14px;
+  font-size: 16px;
 }
 .calculator-inputs label {
-  font-size: 12px;
+  font-size: 16px;
   color: hsl(183, 100%, 15%);
+  margin-bottom: 5px;
 }
 
 .tip-buttons {
@@ -49,6 +54,8 @@ body {
   width: 90%;
   margin-bottom: 0.5rem;
   font-weight: 600;
+  font-size: 20px;
+  padding: 0.5rem 10px;
 }
 .tip-buttons button:hover {
   background-color: hsl(172, 67%, 45%);
@@ -56,4 +63,37 @@ body {
 .tip-buttons .custom {
   color: hsl(184, 14%, 56%);
   background-color: hsl(189, 41%, 97%);
+}
+
+.calculator-results {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 20px;
+  padding: 40px;
+  color: white;
+  position: relative;
+}
+.calculator-results .col {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.calculator-results .tip-amount-total {
+  font-size: 3em;
+  font-weight: 700;
+  color: hsl(172, 67%, 45%);
+}
+.calculator-results p {
+  color: hsl(184, 14%, 56%);
+}
+.row {
+  position: relative;
+}
+.calculator-results .reset-btn button {
+  position: absolute;
+  bottom: -100px;
+}
+.calculator-results .reset-btn button {
+  background-color: hsl(172, 67%, 45%);
+  font-weight: 700;
+  font-size: 20px;
 }
