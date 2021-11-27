@@ -45,10 +45,11 @@ body {
 
 .tip-buttons {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto 35%;
   justify-items: center;
 }
-.tip-buttons button {
+.tip-buttons button,
+.custom {
   background-color: hsl(183, 100%, 15%);
   color: white;
   width: 90%;
@@ -101,7 +102,7 @@ body {
 
 @media (max-width: 768px) {
   .tip-buttons {
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
   }
   .calculator-container {
     width: 100%;
